@@ -17,7 +17,6 @@ public class Main
         System.out.println(a + "*" + b + "=" + g );
         System.out.println(a + "/" + b + "=" + h );
 
-
-    }
+        }
 
 }
