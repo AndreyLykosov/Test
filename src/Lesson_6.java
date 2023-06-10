@@ -5,11 +5,13 @@ public class Lesson_6 {
             System.out.println(A);
         }
     }
-        private static void Double_numbers() {
-            System.out.println("Парные числа от 1 до 100");
-            for (int B = 1; B < 100; B++)
-                if (B % 2 == 0) {
-                System.out.println(B);
-                }
+
+    public static void Double_numbers(String[] args) {
+        System.out.println("Парные числа от 1 до 100");
+        for (int B = 1; B < 100; B++) {
+            if (B % 2 == 0);
+            System.out.println(B);
+
         }
     }
+}
