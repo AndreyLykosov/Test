@@ -1,18 +1,54 @@
 public class Lesson_6 {
-   //Программа для вывода чисел от 1 до10
-    public static void main(String[] args) {//Создаем класс
+   // 1.Программа для вывода чисел от 1 до10
+   public static void main(String[] args) {//Создаем класс
         System.out.println("Числа от 1 до 10");//Заглавие
         for (int A = 1; A < 11; A++) {//Создаем цикл с увеличение следующего числа на 1
             System.out.println(A);//Выводим результат
         }
-    }
-
-    public static void Double_numbers(String[] args) {
-        System.out.println("Парные числа от 1 до 100");
-        for (int B = 1; B < 100; B++) {
-            if (B % 2 == B) {
-                System.out.println("B" + B);
+        Double_numbers();
+        Factorial7();
+        Fibonacci();
+   }
+// 2. Показати всі парні числа в діапазоні від 1 до 100
+    private static void Double_numbers() {//Создаем класс поиска парных чисел
+        System.out.println("Парные числа от 1 до 100");//Заглавие
+        for (int B = 1; B < 101; B++) {//Формируем цикл от 1 до 100
+            if (B % 2 == 0) {//Если остаток от деления B на 2 равняется 0, то выводим на печать
+                System.out.println(B);//Выводим результат
             }
         }
+
+    }
+
+// 3. Factorial7
+    private static void Factorial7() {//Создаем класс факториал числа 7
+        System.out.println("Факториал числа 7: ");
+        //Создаем переменные
+        int a = 7;
+        int factorial = 1;
+        int b = 1;
+       //Создаем цикл do while
+        do {
+            factorial = factorial * b;//Фактоиал равняется, 1 умножить на число увеличивающееся на +1 кождого цикла
+            b++;//Значение b увеличивается на 1
+                        }
+            while (b <= a); //while, выполняется до значения а
+            System.out.println("Факториал числа " + a + " является число " + factorial);//Печатаем результат
+        }
+// 4. Вивести числа фібоначчі до 100 (значення самого числа не повинно перевищувати 100
+    private static void Fibonacci(){
+        System.out.println("Числа Фибаначчи до 100");
+        //создаем переменные которые пригодятся чтобы найти число фибаначчи
+        int n1 = 0; //создаем переменные которые пригодятся чтобы найти число фибаначчи
+        int n2 = 1;
+        int sum;
+        System.out.println(n1);  // Выводим первое число Фибоначчи (0)
+        while (n2 <= 100) {//цикл останавливается если n2 меньше или равно 100
+            System.out.println(n2);  // Выводим текущее число Фибоначчи
+            sum = n1 + n2;
+            n1 = n2;
+            n2 = sum;
+        }
+
     }
 }
