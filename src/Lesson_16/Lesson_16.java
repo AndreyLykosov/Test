@@ -1,31 +1,29 @@
 package Lesson_16;
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.List;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lesson_16 {
-
     public static void main(String[] args) {
-        arrayList();
-        linkedList();
-    }
+        // Создаем список студентов
+        List<Student> students = new ArrayList<>();
 
-    private static void arrayList() {
-        List<Integer> integerList = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) {
-            integerList.add(i);
-            System.out.println("ArrayList " + integerList.get(i - 1));
-        }
-    }
+        // Добавляем студентов в список
+        students.add(new Student("Иван", 20));
+        students.add(new Student("Мария", 19));
+        students.add(new Student("Петр", 22));
 
-    private static void linkedList() {
-        List<Integer> numbers = new LinkedList<>();
-        for (int i = 1; i <= 2000000; i++) {
-            numbers.add(i);
-            System.out.println("LinkedList " + numbers.get(i - 1));
+        // Выводим список студентов на экран
+        for (Student student : students) {
+            System.out.println(student);
         }
     }
 }
+
+
+
 
    
 
