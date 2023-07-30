@@ -1,17 +1,19 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
+
 public class Lesson_16 {
     static void main(String[] args) {
 
-        long start = System.currentTimeMillis();
-        ArrayList<Integer> numbersArrayList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            numbersArrayList.add(i);
+        private static void arrayList () {
+
+            List<Integer> integerList = new ArrayList<>();
+            for (int i = 1; i <= 1010; i++) {
+                integerList.add(i);
+                System.out.println(integerList.get(i));
+            }
         }
-
-        long end = System.currentTimeMillis();
-        System.out.println("arraylist" + " " + (end-start));
-
     }
-   
 }
+   
+
