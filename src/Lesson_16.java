@@ -8,12 +8,14 @@ public class Lesson_16 {
         private static void arrayList () {
 
             List<Integer> integerList = new ArrayList<>();
-            for (int i = 1; i <= 1010; i++) {
+            int i;
+            for (i = 1; i <= 10; i++) {
                 integerList.add(i);
                 System.out.println(integerList.get(i));
             }
         }
     }
 }
+
    
 
