@@ -1,8 +1,10 @@
 package Lesson_17;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lesson_17ain(String[] args) {
+public class Lesson_17 {
+    public static void main(String[] args) {
         // Создаем список студентов
         List<Student> students = new ArrayList<>();
 
@@ -21,5 +23,4 @@ public class Lesson_17ain(String[] args) {
 
 
 
-   
 
