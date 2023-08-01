@@ -12,7 +12,7 @@ public class Student {
         this.age = age;
     }
 
-    // Геттеры и сеттеры (необязательно, но хорошая практика)
+    // Геттеры и сеттеры
     public String getName() {
         return name;
     }
