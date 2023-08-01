@@ -1,12 +1,8 @@
-package Lesson_16;
+package Lesson_17;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Lesson_16 {
-    public static void main(String[] args) {
+public class Lesson_17ain(String[] args) {
         // Создаем список студентов
         List<Student> students = new ArrayList<>();
 
