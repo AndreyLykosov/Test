@@ -38,13 +38,12 @@ INSERT INTO city (name, population, country_id) VALUES
     ('Shanghai', 27058479, 3);]]></console>
     </connection>
     <connection id="bd036f40-0cac-461e-9262-1d05186fc426">
-      <console name="university_db" type="STANDARD" schema="university_db" session="Main"><![CDATA[CREATE TABLE country (
+      <console name="university_db" type="STANDARD" schema="university_db" session="Main"><![CDATA[CREATE TABLE city (CREATE TABLE country (
     country_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     population INT,
     capital VARCHAR(255)
 );
-CREATE TABLE city (
     city_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     population INT,
@@ -82,6 +81,9 @@ INSERT INTO city (name, population, country_id) VALUES
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>

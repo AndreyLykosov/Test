@@ -7,8 +7,6 @@ import java.sql.SQLException;
 public class StudentDAO {
     private String jdbcURL = "jdbc:mysql://localhost:3306/university_db";
     private String jdbcUsername = "ваш_користувач";
-    private String jdbcPassword = "ваш_пароль";
-
     private static final String INSERT_STUDENT_SQL = "INSERT INTO students (first_name, last_name, age) VALUES (?, ?, ?)";
     private static final String SELECT_STUDENT_SQL = "SELECT * FROM students WHERE id = ?";
 
@@ -18,7 +16,7 @@ public class StudentDAO {
         Connection connection = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+            connection = DriverManager.getConnection(jdbcURL, jdbcUsername);
         } catch (SQLException e) {
             // Обробка помилок
         } catch (ClassNotFoundException e) {
